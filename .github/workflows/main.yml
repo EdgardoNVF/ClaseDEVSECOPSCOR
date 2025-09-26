@@ -29,7 +29,7 @@ jobs:
         with:
           projectBaseDir: .
           args: >
-            -Dsonar.branch.name=main
+            -Dsonar.branch.name=master
             -Dsonar.projectKey=netecvefe_devsecops-client
             -Dsonar.organization=netecvefe
             -Dsonar.sources=src/main/java
