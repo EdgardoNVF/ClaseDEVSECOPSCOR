@@ -37,7 +37,7 @@ jobs:
             -Dsonar.java.binaries=target/classes
       
       - name: Build docker
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/classtest:${{ github.sha }}
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/classtest:${{ github.sha }} .
         working-directory: .
       
       - name: log in docker hub
